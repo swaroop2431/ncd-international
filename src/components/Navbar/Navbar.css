@@ -1,0 +1,149 @@
+
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* width: 100%; */
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.brand {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.left-ul, .right-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  /* color: #989797; */
+}
+
+.left-ul li, .right-ul li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.left-ul li:hover, .right-ul li:hover {
+  color: #040404; 
+}
+
+.home-icon {
+  font-size: 1.5rem; 
+  color: #333;
+}
+
+.site-title {
+  margin-left: 10px;
+  font-size: 1.2rem; 
+  color: #333; 
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f9f9f9;
+}
+
+.selected {
+  color: rgb(107, 151, 46); 
+  border-bottom: 2px solid rgb(107, 151, 46);
+}
+.burger-menu{
+  display: none;
+}
+.menu-items{
+  display: none;
+}
+
+.menu-icon{
+  margin:5px
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .left-ul, .right-ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+ 
+}
+
+@media screen and (max-width:456px) {
+  .burger-menu {
+    display: block; 
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .menu-items.show {
+    display: flex; 
+    justify-content: center;
+    background-color: #e6e6e9;
+  }
+
+  .left-ul, .right-ul {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .left-ul li, .right-ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .navbar-container {
+    display: none;
+  }
+
+  .menu-items {
+    display: none;
+  }
+  .brand{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+  
+
+

@@ -1,0 +1,11 @@
+.image-sub-container{
+    flex:1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .image-sub-container{
+        margin-top:10px;
+    }
+}
